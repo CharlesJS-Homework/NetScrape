@@ -6,7 +6,7 @@ function addComment(event) {
   const articleID = $(this).closest('article').attr('article_id');
   const username = $(this).find('[name="username"]').val();
   const body = $(this).find('[name="comment"]').val();
-
+  console.log('okay wtffff');
   $.ajax({
     method: 'POST',
     url: '/api/comment',
