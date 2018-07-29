@@ -34,6 +34,7 @@ function deleteComment(event) {
 }
 
 $(document).ready(() => {
+  console.log('get here?');
   $('.comment-form').submit(addComment);
   $('.comment-delete').click(deleteComment);
 });
