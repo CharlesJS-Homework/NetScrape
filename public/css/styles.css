@@ -1,0 +1,22 @@
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+img {
+  max-width: 650px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.comment-delete {
+  margin-left: 20px;
+  vertical-align: top;
+}

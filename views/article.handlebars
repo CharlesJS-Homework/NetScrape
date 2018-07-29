@@ -1,0 +1,28 @@
+{{#each articles}}
+<article article_id="{{_id}}">
+  <a href="{{url}}">
+    <h2>{{headline}}</h2>
+    {{#if img}}
+      <img src="{{img}}" />
+    {{/if}}
+    <p>{{summary}}</p>
+  </a>
+  {{#if comments}}
+  <h3>Comments!</h3>
+  <ul class="comments">
+    {{#each comments}}
+    <li class="comment">
+      <h4 class="user-sez">{{user}} sez:</h4>
+      <p class="comment-body">{{body}}<button class="comment-delete" comment_id="{{_id}}">Delete</button></p>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+  <h3>Comment on This:</h3>
+  <form class="comment-form">
+    <input type="text" name="username" placeholder="Your Username" /><br />
+    <textarea name="comment" placeholder="Your Divine Wisdom"></textarea><br />
+    <input type="submit" value="Submit" />
+  </form>
+</article>
+{{/each}}
